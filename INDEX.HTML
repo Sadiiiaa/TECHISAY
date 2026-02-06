@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+
+    <title>Saylani Tech - Transform Your Business with Digital Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(135deg, #374892 0%, #633f88 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .price-card { transition: all 0.3s ease; }
+        .price-card:hover { transform: scale(1.05); }
+        .faq-item { transition: all 0.3s ease; }
+        .testimonial-card { transition: all 0.3s ease; }
+        .testimonial-card:hover { transform: translateY(-3px); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">Saylani Tech</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 transition">Home</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-purple-600 transition">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition">Courses</a>
+                    <a href="#faq" class="text-gray-700 hover:text-purple-600 transition">Check Result</a>
+                    <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition">
+                        Get Started
+                    </button>
+                </div>
+                <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#features" class="block py-2 text-gray-700 hover:text-purple-600">Features</a>
+                <a href="#pricing" class="block py-2 text-gray-700 hover:text-purple-600">Pricing</a>
+                <a href="#testimonials" class="block py-2 text-gray-700 hover:text-purple-600">Testimonials</a>
+                <a href="#faq" class="block py-2 text-gray-700 hover:text-purple-600">FAQ</a>
+                <button class="w-full bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center py-16 lg:py-24">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                   Building Pakistan's 
+                    <span class="gradient-text">Tech Future </span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                 Saylani Tech represents a massive digital movement in Pakistan, focusing on both free technical education and professional software services
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button class="hero-gradient text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition transform hover:scale-105">
+                        Enroll Now
+                    </button>
+                    <button class="bg-white text-purple-600 border-2 border-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 transition">
+                        Explore Courses
+                    </button>
+                </div>
+                <div class="flex justify-center space-x-8 text-sm text-gray-600">
+                    <div class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        No credit card required
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        14-day free trial
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        Cancel anytime
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl w-full">
+                    <div class="grid md:grid-cols-3 gap-8 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-purple-600">200,000+</div>
+                            <div class="text-gray-600">students Trained</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-purple-600">400+</div>
+                            <div class="text-gray-600">Traniers</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-purple-600">24/7</div>
+                            <div class="text-gray-600">70% Employment Success</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                    Changing Lives.Building Careers.Shaping the Future
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Empowering You With World-Class IT Training and proven Success
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Custom Software Development</h3>
+                    <p class="text-gray-600 mb-4">
+                        Tailored solutions built specifically for your business needs. From web apps to mobile applications.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Scalable Architecture</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Modern Tech Stack</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Agile Development</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Cloud Migration</h3>
+                    <p class="text-gray-600 mb-4">
+                        Seamlessly migrate your infrastructure to the cloud for better performance, security, and cost-efficiency.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>AWS & Azure Experts</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Zero Downtime</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cost Optimization</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">AI & Automation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Leverage artificial intelligence and automation to streamline operations and boost productivity.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Process Automation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>ML Integration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Smart Analytics</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Cybersecurity</h3>
+                    <p class="text-gray-600 mb-4">
+                        Protect your digital assets with enterprise-grade security solutions and compliance management.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Security Audits</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Compliance Management</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>24/7 Monitoring</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Digital Analytics</h3>
+                    <p class="text-gray-600 mb-4">
+                        Data-driven insights to help you make informed decisions and optimize your digital strategy.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Real-time Dashboards</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Custom Reports</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Predictive Analytics</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">24/7 Support</h3>
+                    <p class="text-gray-600 mb-4">
+                        Round-the-clock technical support to ensure your business operations run smoothly without interruption.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Live Chat Support</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Priority Response</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Dedicated Account Manager</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                    Browse Our Top Courses
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="price-card bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Agentic AI</h3>
+                        <p class="text-gray-600 mb-6">Agentic AI is expected to be a major technology trend in 2026, driven by the need for more independent and efficient AI solutions. </p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-gray-900"></span>
+                            <span class="text-gray-600"></span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>High autonomy</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>goal orientation, contextual awareness</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>proactive</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>self-driven self-driven</span>
+                        </li>
+                        <li class="flex items-center ">
+                            <i class="fas fa-chech text-green-500 mr-3"></i>
+                            <span></span>
+                        </li>
+                        <li class="flex items-center ">
+                            <i class="fas fa-chech text-green-500 mr-3"></i>
+                            <span></span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-100 text-gray-900 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+                        Enroll Now
+                    </button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="price-card bg-purple-600 rounded-2xl shadow-xl p-8 text-white transform scale-105">
+                    <div class="text-center mb-8">
+                        <div class="bg-yellow-400 text-purple-900 text-sm font-bold px-3 py-1 rounded-full inline-block mb-4">
+                            MOST POPULAR
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Web development </h3>
+                        <p class="text-purple-100 mb-6">comprehensive process of creating, building, and maintaining websites and web applications that run in a browser</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold"></span>
+                            <span class="text-purple-100"></span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            <span>Responsive Design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            <span>Fast Loading Speed</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            <span>API-First Approach</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            <span>Intuitive Navigation:</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            <span>Cloud-Native Infrastructure</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-400 mr-3"></i>
+                            <span></span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-white text-purple-600 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+                        Enroll Now
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="price-card bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Amazon & ETSY Business Mastery</h3>
+                        <p class="text-gray-600 mb-6">highly specialized programs for each platform, alongside comprehensive e-commerce certifications that cover both business models.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-gray-900"></span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>A9 Algorithm Optimization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>FBA Logistics</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Brand Registry</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Off-Site Ads</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Customer Engagement</span>
+                        </li>
+                       
+                    </ul>
+                    <button class="w-full bg-gray-900 text-white py-3 rounded-full font-semibold hover:bg-gray-800 transition">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-gray-600">
+                    <i class="fas fa-shield-alt text-green-500 mr-2"></i>
+                   
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                    We don’t just teach IT We manufacture success stories
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Thousands of our alumni are powering the digital economy with innovation, skill, and passion.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                      
+                        <span class="ml-2 text-gray-600"></span>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        He is widely respected for his vision of combining traditional humanitarian aid (like food and healthcare) with modern technical education to help people achieve financial independence.
+
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">JD</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900"> Muhammad Ibrahim</div>
+                            <div class="text-gray-600 text-sm">Head of SMIT (Saylani Mass IT Training)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                       
+                        <span class="ml-2 text-gray-600"></span>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                       Muhammad Madni Raza is the CEO of Saylani Welfare International Trust, a role he has held through early 2026. He is frequently recognized for his leadership in scaling the organization's humanitarian and technical education initiatives
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">SC</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900"> Muhammad Madni Raza </div>
+                            <div class="text-gray-600 text-sm">CEO,Saylani Welfare Trust.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="flex items-center mb-4">
+                      
+                        <span class="ml-2 text-gray-600"></span>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                         Maulana Bashir Ahmed Farooqui is the Founder and Chairman of Saylani Welfare International Trust, a role he continues to actively hold in early 2026.
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">MR</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Maulana Bashir Farooq Qadri.</div>
+                            <div class="text-gray-600 text-sm">Founder, GrowthStart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <div class="inline-flex items-center space-x-8 text-sm text-gray-600">
+                    <div class="flex items-center">
+                        <i class="fas fa-users text-purple-600 mr-2"></i>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-globe text-purple-600 mr-2"></i>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-award text-purple-600 mr-2"></i>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-600 to-purple-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Be a Part of This Vision
+            </h2>
+            <p class="text-xl text-purple-100 mb-8">
+                Join thousands of students who are already transforming their careers and contributing to Pakistan's digital future
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button class="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
+                    About Saylani Mass IT Traning
+                </button>
+                <button class="bg-transparent text-white border-2 border-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-purple-600 transition">
+                    Enroll Now
+                </button>
+            </div>
+          
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Saylani Tech</h3>
+                    <p class="text-gray-400 mb-4">
+                        Empowering Pakistan's youth with world-class IT education and training programs to build a brighter digital future.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Chat Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Enroll Now</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Download ID Card</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Our Courses</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Flutter App development with AI</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">IT Professional</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Ai & Chatbot</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">CCTV Camera Installation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Campuses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                  © 2013 - 2026 Saylani Mass IT Training. All rights reserved.| 
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // FAQ toggle
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
